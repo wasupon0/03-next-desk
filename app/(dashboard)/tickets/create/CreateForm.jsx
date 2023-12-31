@@ -1,4 +1,7 @@
-import SubmitButton from "@/app/components/SubmitButton";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { addTicket } from "../actions";
 
 export default function CreateForm() {
@@ -10,7 +13,11 @@ export default function CreateForm() {
       </label>
       <label>
         <span>Body:</span>
-        <textarea name="body" required />
+        <textarea
+          required
+          onChange={(e) => setBody(e.target.value)}
+          value={body}
+        />
       </label>
       <label>
         <span>Priority:</span>
