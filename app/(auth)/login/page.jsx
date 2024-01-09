@@ -30,7 +30,7 @@ export default function Login() {
 
   return (
     <main>
-      <h2 className="text-center">Log in4</h2>
+      <h2 className="text-center">Log in5</h2>
 
       <AuthForm handleSubmit={handleSubmit} />
 
